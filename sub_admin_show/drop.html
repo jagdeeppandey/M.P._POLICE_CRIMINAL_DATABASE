@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="sub_adminCss.css">
+
+  <title>Show criminal's details </title>
+
+
+  <style>
+    .div2 {
+      width: 700px;
+      height: 400px;
+      padding: 50px;
+    }
+
+    .forsame {
+      height: 45px;
+      width: 100%;
+      outline: none;
+      font-size: 20px;
+      border-radius: 5px;
+      padding-left: 15px;
+      border: 1px solid #07747b;
+      border-bottom-width: 2px;
+      /* opacity:0.8; */
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin-top: -8px;
+      height: 8px;
+      background: url(https://sendy.colorlib.com/img/top-pattern2.gif) repeat-x 0 0;
+      background-size: auto 8px;
+      /* background-color: white; */
+    }
+  </style>
+
+  <script type="text/javascript">
+    function populate(s1, s2) {
+
+      var s1 = document.getElementById(s1);
+      var s2 = document.getElementById(s2);
+      s2.innerHTML = "";
+      if (s1.value == "Chhindwara") {
+        var optionArray = ["|", "Junnardeo Police Station|Junnardeo Police Station", "Amarwara Police Station|Amarwara Police Station", "Bichua Police Station|Bichua Police Station", "Damua Police Station|Damua Police Station", "Lodhikhera Police Station|Lodhikhera Police Station"];
+      } else if (s1.value == "Bhopal") {
+        var optionArray = ["|", "Govindpura Police Station|Govindpura Police Station", "Habibganj Police Station|Habibganj Police Station","Jahangirabad Police Station|Jahangirabad Police Station","Bairagarh Police Station|Bairagarh Police Station","Kamla Nagar Police Station|Kamla Nagar Police Station"];
+      } else if (s1.value == "Gwalior") {
+        var optionArray = ["|","Police Station: Antri|Police Station: Antri","Police Station: Aron|Police Station: Aron","Police Station: Bahodapur|Police Station: Bahodapur","Police Station: Behat|Police Station: Behat","Police Station: Belgarha|Police Station: Belgarha","Police Station: Bijoli|Police Station: Bijoli"];
+      } else if (s1.value == "Indore") {
+        var optionArray = ["|","Aerodrum Police Station|Aerodrum Police Station","Annapurna Police Station|Annapurna Police Station","Banganga Police Station|Banganga Police Station","Chhatripura Police Station|Chhatripura Police Station","Dwarka Puri Police Station|Dwarka Puri Police Station"];
+      } else if (s1.value == "Sagar") {
+        var optionArray = ["|","Banda Police Station|Banda Police Station","Bina Police Station|Bina Police Station","Gopalganj Police Station|Gopalganj Police Station","Surkhi Police Station|Surkhi Police Station","Khurai Police Station|Khurai Police Station"];
+      } else if (s1.value == "Ujjain") {
+        var optionArray = ["|","Mahakal Police Station|Mahakal Police Station","Madhav Nagar Police Station|Madhav Nagar Police Station","Kotwali Police Station|Kotwali Police Station","Dewas Gate Police Station|Dewas Gate Police Station","Bherugarh Police Station|Bherugarh Police Station"];
+      }
+      for (var option in optionArray) {
+        var pair = optionArray[option].split("|");
+        var newOption = document.createElement("option");
+        newOption.value = pair[0];
+        newOption.innerHTML = pair[1];
+        s2.options.add(newOption);
+      }
+    }
+  </script>
+</head>
+<!-- <body style="background-color:rgb(43, 132, 53);"> -->
+
+<body>
+  <form method="POST" action="show.php">
+    <center>
+      <p>&nbsp;</p>
+      <div class="div2">
+        <h1 style="font-family: fantasy;">For fetching details of a criminal enter following details</h1>
+        <br>
+        <div class="form-group">
+          <h2 style="color:rgb(146, 9, 9);font-family: fantasy;margin-right:500px;">Name</h2>
+          <input type="text" class="forsame" name="button" placeholder="Enter his name" required>
+          <p>&nbsp;</p>
+          <h2 style="color:rgb(146, 9, 9);font-family: fantasy;margin-right:480px;">District</h2>
+          <select class="forsame" id="slctt1" name="slctt1" onchange="populate(this.id,'slctt2')">
+
+            <option value="">Chhose from the list..</option>
+            <option value="Chhindwara">Chhindwara</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Indore">Indore</option>
+            <option value="Gwalior">Gwalior</option>
+            <option value="Sagar">Sagar</option>
+            <option value="Ujjain">Ujjain</option>
+          </select>
+        
+        <p>&nbsp;</p>
+          <h2 style="color:rgb(146, 9, 9);font-family: fantasy;margin-right:525px;">City</h2>
+          <select class="forsame" id="slctt2" name="slctt2">
+          </select>
+          <br><br>
+        <input class="btn btn-info" style="width: 100%;" type="submit" name="buttone" value="view">
+
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- yeh bas try -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>MPCR </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+    <!-- yeh bas ki read more kam kar jaye -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
+  <!-- for faltu kam of about edit in front page😁 -->
+
+  <style>
+    .containerr {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .textt {
+      font-size: 70px;
+      /* margin-left:200px;   */
+    }
+
+
+    .section-header {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    /* This one is for panchayat like read more */
+    #more {
+      display: none;
+    }
+    #myBtn{
+  cursor:pointer;
+  color: green;
+  font-size: 20px;
+    }
+
+  </style>
+
+<script>function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}</script>
+
+</head>
+<body>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a>
+            <img alt="Police Mail" class="ulimg" data-entity-type="file" height="70" src="images/Mp123.png" width="65">
+            <a class="navbar-brand" id="span" style="color:#f0e68c"><span id="span1"><b>Police Criminal Record</b><br>देश भक्ति ̶̵ जन सेवा</span></a><br>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index1.html">Home</a>
+              </li>
+
+              <!-- this one direct access to the about😁😁😁 -->
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/SIH_COLLAGE_PROJECT/add_detail_criminal/add_criminal.php">Add Criminals</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="drop_option.html" target="_blank">Criminal Record</a>
+              </li> 
+              
+              <li class="nav-item">
+                <a class="nav-link" href="event.html" target="_blank">Events</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/SIH_COLLAGE_PROJECT/graph_show/graph.php" target="_blank">Dashboard</a>
+              </li>
+
+            </ul>
+            
+            <a href="/SIH_COLLAGE_PROJECT/index.html" style="color:white;"><img src="./images/logout.jpeg" alt="" width="18px">Logout</a>
+
+      </div>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->   
+    <!-- home content -->
+    <!---->
+    <section class="home">
+
+      <div class="img">
+        <img src="images\police_1.jpg" alt="Los Angeles">
+      </div>
+
+      <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<br><br>
+  <div class="section-header" data-aos="zoom-in">
+    <h1><u>About Us</u></h1>
+  </div>
+
+
+  <div class="container" id="about" data-aos="zoom-in" >
+
+    <h2 ><b>MISSION STATEMENT</b></h2>
+    <p style="font-size: 18px;">The mission of MP Police is to preserve the peace, maintain law and order, enhance the quality
+      of life throughout the state of Madhya Pradesh by working cooperatively and in partnership with the
+      public to provide a safe environment in the state. MP Police is committed to provide professional law
+      enforcement services, protecting rights of the individuals, preventing crime and building community partnership.
+      We endeavour to fully justify the motto of MP police <i>“Desh Bakti, Jan Seva”</i> by serving the community with
+      integrity,
+      transparency and quality to enhance the feeling of safety and security within the state.</p>
+
+      </div>
+      <div class="container" id="about" data-aos="zoom-in" >
+    <h2><b>What is MPCR?</b></h2>
+    <p style="font-size: 18px;">It is proposed to centralize Information Management in Crime for the purposes of fast and efficient sharing of
+      critical information across all Police Stations across the territory. Initially, the system will be implemented
+      across Cities and Towns and later on, be interlinked so that a Police detective can access information across all
+      records in the state thus helping speedy and successful completion to cases. The System would also be used to
+      generate information for pro-active and preventive measures for fighting crime.</p>
+
+      </div>
+      <div class="container" id="about" data-aos="zoom-in" >
+
+    <h2><b>History</b></h2>
+    <p style="font-size: 18px;">Madhya Pradesh, in its present form, came Click Here Madhya Pradesh Map (www.mpinfo.org) into existence on
+      November 1,2000 following its bifurcation to create a new state of Chhattisgarh.Reorganization of states led to
+      the formation of state of M. P. on 1.11.1956 comprising of the erstwhile central province of Bhopal, Madhya Bharat
+      & Vindhya Pradesh.<span id="dots">...</span><span id="more">
+        <br><br>
+        On the day of its birth the state had a complement of 252 Gazetted Officers and 39785 Non Gazetted Officers and
+        men covering 739 Police Station. Six posts of DIG were created in the new state. The post of DIG of Police SAF &
+        DIG of Police Admin.were added later in 1958 & 1959 respectively.23 new police stations were established mainly
+        in
+        the dacoit infested areas as part of a larger scheme to strike a decisive blow to organize and arrested dacoit
+        gangs. Strength of the Distt. Executive Force & the SAF were augmented, keeping in view the law and order
+        situation with the State.<br><br>
+        Shri Rustamji had the distinction of leading the force for 7 years before he was chosen to create a new Central
+        Force, the Border Security Force. It was during Shri Rustamji's time that the Police Force achieved many
+        milestones, including starting of Forensic Science Laboratory in 1964.
+      </span>
+    </p>
+    <!-- <button class="read-more-btn">Read More</button> -->
+    <a onclick="myFunction()" id="myBtn" class="nav-link" >Read more <i class="bi bi-arrow-right"></i></a> 
+
+    <!-- <button onclick="myFunction()" id="myBtn">Read more</button> -->
+
+    <p><br></p>
+    <!-- <h1><b>Achievements</b></h1> -->
+  <!-- </div> -->
+  <div style="box-shadow: 0 5px 5px rgba(0,0,0,0.15);">
+    <div class="section-header" data-aos="zoom-in" >
+      <h1 style="font-family: 'Franklin Gothic Medium' ;">Achievements</h1>
+    </div>
+
+    <div class="containerr" data-aos="zoom-in">
+      <div class="imgg">
+        <img src="https://www.mppolice.gov.in/sites/default/files/inline-images/Final1.jpg">
+      </div>
+      <div class="textt">
+        <h3 ><u>1. President's Medal For Gallantry:-</u></h3>
+        <p style="font-size: 18px;">
+          This Medal is awarded for conspicuous gallantry in saving life and property, or in preventing crime or
+          arresting criminals. All police personnel of the country irrespective of rank and length of service are
+          eligible for this award. The Recipients of this Medal are granted an allowance of Rs.200/- per month which
+          continue to be paid to them at the same rate even after retirement.
+        </p>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+
+
+    <div class="containerr" data-aos="zoom-in">
+      <div class="imgg">
+        <img src="https://www.mppolice.gov.in/sites/default/files/inline-images/final2.jpg">
+      </div>
+      <div class="textt">
+        <h3><u>2. Police Medal for Gallantry:-</u></h3>
+        <p style="font-size: 18px;">
+          This Medal is awarded for conspicuous gallantry. All police personnel of the country irrespective of rank and
+          length of service are eligible for this award. The Recipients of this Medal are granted an Allowance of
+          Rs.100/-
+          per month which continue to be paid to them at the same rate even after retirement. After the death of the
+          recipient of the Medal, this Allowance continue to be paid to his widow at the same rate. The recipients of
+          this
+          Medal are also eligible to travel free by train in the 2nd class AC II tier or in the first class with an
+          attendant.
+        </p>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+
+    <div class="containerr" data-aos="zoom-in">
+      <div class="imgg">
+        <img src="https://www.mppolice.gov.in/sites/default/files/inline-images/final3.jpg">
+      </div>
+      <div class="textt">
+        <h3><u>3. Presidents Medal for Distinguished Service:-</u></h3>
+        <p style="font-size: 18px;">
+          Every year about 125 Medals are awarded on the occasion of Independence and Republic Day in recognition of a
+          special distinguished record in Police service or in the Central Police/ Security Organisation. All police
+          personnel in the country with at least 21 years of service are eligible for this award.
+        </p>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+
+    <div class="containerr" data-aos="zoom-in">
+      <div class="imgg">
+        <img src="https://www.mppolice.gov.in/sites/default/files/inline-images/Final1.jpg">
+      </div>
+      <div class="textt">
+        <h3><u>4. Police Medal for Meritorious Service:-</u></h3>
+        <p style="font-size: 18px;">
+          This Medal is awarded every year on the occasion of Independence and Republic Day in recognition of the
+          meritorious record in Police service or in the Central Police/ Security Organistaion. All Police personnel in
+          the
+          country with at least 15 years of service are eligible for this award. The number of Medals to be awarded in a
+          year is fixed at 740. The recipients of the award are presented Medals in Ceremonies arranged by the State
+          Government/ Central Police Organisation concerned.
+        </p>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+
+
+    <div class="containerr" data-aos="zoom-in">
+      <div class="imgg">
+        <img src="https://www.mppolice.gov.in/sites/default/files/inline-images/Final1.jpg">
+      </div>
+      <div class="textt">
+        <h3><u>5. Life Saving Medal:-</u></h3>
+        <p style="font-size: 18px;">
+          This Medal was instituted in 1958 to encourage policemen of all ranks to bring help and soccour to the
+          afflicted
+          and is awarded to police personnel within the territory of India who have done outstanding work in saving
+          life.
+          The Recipients of this Medal are presented Medals in the All India Police Duty Meet.
+        </p>
+      </div>
+    </div>
+    <br><br>
+
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+    <!-- home content -->
+
+<section id="questions" class="p-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="questions">
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#question-one"
+          >
+            Is there any subscription you will need for using this application?
+          </button>
+        </h2>
+        <div
+          id="question-one"
+          class="accordion-collapse collapse"
+          data-bs-parent="#questions"
+        >
+          <div class="accordion-body">
+            No,this website is absoluty free to use wheather you are a normal person or any position holder in M.P police.
+            The only thing to note is a normal person won't be able to view the criminal's data.
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#question-two"
+          >
+            Who can edit the details of criminal?
+          </button>
+        </h2>
+        <div
+          id="question-two"
+          class="accordion-collapse collapse"
+          data-bs-parent="#questions"
+        >
+          <div class="accordion-body">
+            Inshort the position holder in M.P police(admin) only will be having the access to edit the data related to the criminal.
+            adding to it they can also add the sub admins
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#question-three"
+          >
+            What a normal person can see?
+          </button>
+        </h2>
+        <div
+          id="question-three"
+          class="accordion-collapse collapse"
+          data-bs-parent="#questions"
+        >
+          <div class="accordion-body">
+            They can only see what's going on in the website. Moreover they don't be having the access to edit anything.
+          </div>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#question-four"
+          >
+            How Do I sign up?
+          </button>
+        </h2>
+        <div
+          id="question-four"
+          class="accordion-collapse collapse"
+          data-bs-parent="#questions"
+        >
+          <div class="accordion-body">
+            Using the register button you can sign up into the website after that you can login whenever you will need to.
+          </div>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#question-five"
+          >
+            Do you help me find a job?
+          </button>
+        </h2>
+        <div
+          id="question-five"
+          class="accordion-collapse collapse"
+          data-bs-parent="#questions"
+        >
+          <div class="accordion-body">
+            No,this website is not for finding jobs and all.This website is basically for the viewing the details related to criminal.The Police officiers will be having the access to add the admin's as well as subadmin's data.
+            One special thing is no one literally no one can change the data at all whether he is any position holder in the Police administration or a normal person.
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Police Record </h3>
+              <p>
+                 Police 
+                 <br>
+              
+              </p>
+              <strong>Contact number:</strong> 100 <br>
+              <strong>Website :</strong> addlpc.hq.bhopal@mppolice.gov.in<br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Rules</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Connect our Social Network .</p>
+
+              <div class="socail-links mt-3">
+                <a href="https://twitter.com/MPPoliceDeptt"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/MPPoliceDeptt"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mppolicedeptt/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/mppolice/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <center><br><p><b>Made With ❤️ For Madhya Pradesh Police by Team - Tech Imaginers.</b></p></br></center>
+      <hr>
+      <center><span style="font-family: 'Courier New', Courier, monospace;">Made with ❤️ for Madhya Pradesh Police by Tech Imaginers</span>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <!-- yeh hui na bat -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+      offset: 170,
+      duration: 1000,
+  });</script>
+</body>
+</html>

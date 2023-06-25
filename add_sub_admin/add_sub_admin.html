@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="sub_adminCss.css">
+    <title>Register co-admin </title>
+  </head>
+  <body>
+    
+
+<section class="vh-80 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 20px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-4">Register Co-Admin Form</h3>
+            
+            <form  id="login" method="post" action="add_sub_admin\sub_adminPhp.php">
+
+              <div class="row">
+                <div class="col-md-6 mb-2">
+
+                  <div class="form-outline">
+                    <input type="text" name="firstName" class="form-control" placeholder="First Name" required/>
+                    <label class="form-label" for="firstName">First Name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-2">
+
+                  <div class="form-outline">
+                    <input type="text" name="lastName" class="form-control" placeholder="Last Name" required/>
+                    <label class="form-label" for="lastName">Last Name</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required/>
+                    <label for="email" class="form-label">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-2">
+
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option1" checked required/>
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option2" required/>
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender" value="option3" required/>
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-1">
+
+                  <div class="form-outline">
+                    <input type="text" name="city" class="form-control" placeholder="City" required/>
+                    <label class="form-label" for="emailAddress">City</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-1">
+
+                  <div class="form-outline">
+                    <input type="tel" name="phoneNumber" class="form-control" placeholder="Phone Number" required/>
+                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 mb-4 pb-2 pb-md-0 mb-md-4">
+
+                  <select class="select form-control-lg" name="rank" required>
+                    <option value="1" disabled>Choose Rank</option>
+                    <option value="2">DGP</option>
+                    <option value="3">ADGP</option>
+                    <option value="4">IGP</option>
+                    <option value="5">DIG</option>
+                    <option value="6">AIG/SSP</option>
+                    <option value="7">SP</option>
+                    <option value="8">Addl.SP</option>
+                    <option value="9">DSP</option>
+                    <option value="10">ASP(2 year service)</option>
+                    <option value="11">ASP(1 year service)</option>
+                    <option value="12">INS/CI</option>
+                    <option value="13">API</option>
+                    <option value="14">SI</option>
+                    <option value="15">ASI</option>
+                    <option value="16">HC/SCPO</option>
+                    <option value="17">SC</option>
+                    <option value="18">PC/CPO</option>
+
+                  </select>
+                  <label class="form-label select-label">Choose Rank</label>
+
+                </div>
+              </div>
+
+                <div class="form-group mb-4 pb-2 pb-md-0 mb-md-4">
+                        <label for="Password1">Password</label>
+                        <input type="password" class="form-control" name="Password1" placeholder="Password" required>
+                </div>
+                
+                <div class="form-group mb-4 pb-2 pb-md-0 mb-md-4">
+                        <label for="Password2">Confirm Password</label>
+                        <input type="password" class="form-control" name="Password2" placeholder=" Confirm Password" required>
+                </div>
+                <input type="checkbox" id="ossm" name="ossm"> 
+                <label for="ossm">Check me out </label> 
+                    
+                <div class="d-flex justify-content-center">
+                  <input type="submit" value="Register" class="btn btn-info btn-block btn-lg gradient-custom-4 text-body" name="reg">
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+  </body>
+</html>

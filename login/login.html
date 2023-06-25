@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="loginCss.css">
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="POST" action="loginPhp.php">
+        <label><b>User Email
+        </b>
+        </label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <br><br>
+        <div class="row">
+            <div class="col-12 mb-4 pb-2 pb-md-0 mb-md-4">
+                <label class="form-label select-label" id="Rank">Choose option</label>
+
+                <select class="select form-control-lg" name="rank" required>
+                  <option value="No_rank_choosed" disabled>Choose Rank</option>
+                  <option value="DGP">DGP</option>
+                  <option value="ADGP">ADGP</option>
+                  <option value="IGP">IGP</option>
+                  <option value="DIG">DIG</option>
+                  <option value="AIG/SSP">AIG/SSP</option>
+                  <option value="SP">SP</option>
+                  <option value="Addl.SP">Addl.SP</option>
+                  <option value="DSP">DSP</option>
+                  <option value="ASP-2Y">ASP(2 year service)</option>
+                  <option value="ASP-1Y">ASP(1 year service)</option>
+                  <option value="INS/CI">INS/CI</option>
+                  <option value="API">API</option>
+                  <option value="SI">SI</option>
+                  <option value="ASI">ASI</option>
+                  <option value="HC/SCPO">HC/SCPO</option>
+                  <option value="SC">SC</option>
+                  <option value="PC/CPO">PC/CPO</option>
+
+                </select>
+
+            </div>
+          </div>
+          <br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password" required>
+        <br><br>
+        <input type="submit" class="bClass" name="log" value="Login">
+        <br><br>
+        <br><br><hr color:white>
+        <div class="card-footer" text="left">
+            <small>&copy; Tech Imaginers</small>
+        </div>
+    </form>
+</div>
+</body>
+</html>
